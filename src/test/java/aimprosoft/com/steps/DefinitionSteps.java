@@ -33,4 +33,14 @@ public class DefinitionSteps {
     public void fullSizeSiteModeIsDisplayed() throws Throwable {
         endUserSteps.fullSizeSiteModeIsDisplayed();
     }
+
+    @When("^click on the \"([^\"]*)\" title$")
+    public void clickOnTheTitle(String arg0) throws Throwable {
+        endUserSteps.clickOnTheTitle(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" subcategory is displayed$")
+    public void subcategoryIsDisplayed(String arg0) throws Throwable {
+        endUserSteps.subcategoryIsDisplayed(arg0);
+    }
 }

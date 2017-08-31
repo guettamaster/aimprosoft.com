@@ -33,24 +33,15 @@ import javax.mail.MessagingException;
 
 @DefaultUrl("https://www.aimprosoft.com/")
 
-public class HomePage extends net.serenitybdd.core.pages.PageObject {
+public class NavigationMenu extends net.serenitybdd.core.pages.PageObject {
 
-    private static Logger logger = org.slf4j.LoggerFactory.getLogger(HomePage.class);
-
-    String globalpass; //password using "get mail.ru" method
-    String pass;       //password using program method
-
-    public boolean homePageIsOpened() {
-        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.AIMPROSOFT_LOGO)));
-        return $(LOCATORS.AIMPROSOFT_LOGO).isPresent();
+    public void clickOnTheTitle(String arg0) {
+        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.CATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0))));
+        $(LOCATORS.CATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0)).click();
     }
 
-    public void clickOnLeftButton() {
-        $(LOCATORS.LEFT_BUTTON).click();
-    }
-
-    public boolean fullSizeSiteModeIsDisplayed() {
-        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.AIMPROSOFT_LOGO_ON_THE_FULL_SIZE_SITE_MODE)));
-        return $(LOCATORS.AIMPROSOFT_LOGO_ON_THE_FULL_SIZE_SITE_MODE).isPresent();
+    public boolean subcategoryIsDisplayed(String arg0) {
+        withTimeoutOf(16, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SUBCATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0))));
+        return $(LOCATORS.SUBCATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0)).isPresent();
     }
 }
