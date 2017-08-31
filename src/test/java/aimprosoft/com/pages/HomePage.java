@@ -44,4 +44,13 @@ public class HomePage extends net.serenitybdd.core.pages.PageObject {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.AIMPROSOFT_LOGO)));
         return $(LOCATORS.AIMPROSOFT_LOGO).isPresent();
     }
+
+    public void clickOnLeftButton() {
+        $(LOCATORS.LEFT_BUTTON).click();
+    }
+
+    public boolean fullSizeSiteModeIsDisplayed() {
+        withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.AIMPROSFT_LOGO_ON_THE_FULL_SIZE_SITE_MODE)));
+        return $(LOCATORS.AIMPROSFT_LOGO_ON_THE_FULL_SIZE_SITE_MODE).isPresent();
+    }
 }

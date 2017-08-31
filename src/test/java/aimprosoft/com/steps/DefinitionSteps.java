@@ -24,4 +24,13 @@ public class DefinitionSteps {
         endUserSteps.homePageIsOpened();
     }
 
+    @When("^click on left button$")
+    public void clickOnLeftButton() throws Throwable {
+        endUserSteps.clickOnLeftButton();
+    }
+
+    @Then("^full size site mode is displayed$")
+    public void fullSizeSiteModeIsDisplayed() throws Throwable {
+        endUserSteps.fullSizeSiteModeIsDisplayed();
+    }
 }

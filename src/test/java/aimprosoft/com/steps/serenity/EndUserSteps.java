@@ -15,11 +15,23 @@ public class EndUserSteps extends ScenarioSteps {
 
 //======================================================HomePage================================================
 
+    @Step
     public void openHomePage() {
         homePage.open();
     }
 
+    @Step
     public void homePageIsOpened() {
         Assert.assertTrue("False", homePage.homePageIsOpened());
+    }
+
+    @Step
+    public void clickOnLeftButton() {
+        homePage.clickOnLeftButton();
+    }
+
+    @Step
+    public void fullSizeSiteModeIsDisplayed() {
+        Assert.assertTrue("False", homePage.fullSizeSiteModeIsDisplayed());
     }
 }
