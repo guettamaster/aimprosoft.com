@@ -24,6 +24,4 @@ public class DefinitionSteps {
         endUserSteps.homePageIsOpened();
     }
 
-fgg
-
 }

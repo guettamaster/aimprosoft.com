@@ -44,6 +44,4 @@ public class HomePage extends net.serenitybdd.core.pages.PageObject {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.AIMPROSOFT_LOGO)));
         return $(LOCATORS.AIMPROSOFT_LOGO).isPresent();
     }
-
-    fgfg
 }

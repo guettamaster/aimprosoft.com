@@ -22,6 +22,4 @@ public class EndUserSteps extends ScenarioSteps {
     public void homePageIsOpened() {
         Assert.assertTrue("False", homePage.homePageIsOpened());
     }
-
-    fgfg
 }
