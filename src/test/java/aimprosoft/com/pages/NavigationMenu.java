@@ -44,4 +44,19 @@ public class NavigationMenu extends net.serenitybdd.core.pages.PageObject {
         withTimeoutOf(16, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SUBCATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0))));
         return $(LOCATORS.SUBCATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0)).isPresent();
     }
+
+    public boolean titleIsDisplayed(String arg0) {
+        withTimeoutOf(16, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SECTION_TILTE_ON_THE_BACKGROUND_IMAGE.replace("$1", arg0))));
+        return $(LOCATORS.SECTION_TILTE_ON_THE_BACKGROUND_IMAGE.replace("$1", arg0)).isPresent();
+    }
+
+    public boolean breadcrumbIsDisplayed(String arg0) {
+        withTimeoutOf(16, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.CATEGORY_BREADCRUMB.replace("$1", arg0))));
+        return $(LOCATORS.CATEGORY_BREADCRUMB.replace("$1", arg0)).isPresent();
+    }
+
+    public boolean tabIsDisplayed(String arg0) {
+        withTimeoutOf(16, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.TECHNOLOGIES_TAB.replace("$1", arg0))));
+        return $(LOCATORS.TECHNOLOGIES_TAB.replace("$1", arg0)).isPresent();
+    }
 }

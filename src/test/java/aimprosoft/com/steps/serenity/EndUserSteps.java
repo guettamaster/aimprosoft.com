@@ -47,4 +47,19 @@ public class EndUserSteps extends ScenarioSteps {
     public void subcategoryIsDisplayed(String arg0) {
         Assert.assertTrue("False", navigationMenu.subcategoryIsDisplayed(arg0));
     }
+
+    @Step
+    public void titleIsDisplayed(String arg0) {
+        Assert.assertTrue("False", navigationMenu.titleIsDisplayed(arg0));
+    }
+
+    @Step
+    public void breadcrumbIsDisplayed(String arg0) {
+        Assert.assertTrue("False", navigationMenu.breadcrumbIsDisplayed(arg0));
+    }
+
+    @Step
+    public void tabIsDisplayed(String arg0) {
+        Assert.assertTrue("False", navigationMenu.tabIsDisplayed(arg0));
+    }
 }

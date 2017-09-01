@@ -43,4 +43,19 @@ public class DefinitionSteps {
     public void subcategoryIsDisplayed(String arg0) throws Throwable {
         endUserSteps.subcategoryIsDisplayed(arg0);
     }
+
+    @Then("^\"([^\"]*)\" title is displayed$")
+    public void titleIsDisplayed(String arg0) throws Throwable {
+        endUserSteps.titleIsDisplayed(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" breadcrumb is displayed$")
+    public void breadcrumbIsDisplayed(String arg0) throws Throwable {
+        endUserSteps.breadcrumbIsDisplayed(arg0);
+    }
+
+    @Then("^\"([^\"]*)\" tab is displayed$")
+    public void tabIsDisplayed(String arg0) throws Throwable {
+        endUserSteps.tabIsDisplayed(arg0);
+    }
 }
