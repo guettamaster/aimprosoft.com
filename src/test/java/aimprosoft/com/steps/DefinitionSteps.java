@@ -58,4 +58,14 @@ public class DefinitionSteps {
     public void tabIsDisplayed(String arg0) throws Throwable {
         endUserSteps.tabIsDisplayed(arg0);
     }
+
+    @When("^click on down button$")
+    public void clickOnDownButton() throws Throwable {
+        endUserSteps.clickOnDownButton();
+    }
+
+    @Then("^We are really good at block is has coordinates \"([^\"]*)\"$")
+    public void weAreReallyGoodAtBlockIsHasCoordinates(int a) throws Throwable {
+        endUserSteps.weAreReallyGoodAtBlockIsDisplayed(a);
+    }
 }

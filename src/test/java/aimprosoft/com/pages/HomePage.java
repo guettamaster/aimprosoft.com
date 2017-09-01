@@ -53,4 +53,25 @@ public class HomePage extends net.serenitybdd.core.pages.PageObject {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.AIMPROSOFT_LOGO_ON_THE_FULL_SIZE_SITE_MODE)));
         return $(LOCATORS.AIMPROSOFT_LOGO_ON_THE_FULL_SIZE_SITE_MODE).isPresent();
     }
+
+    public void clickOnDownButton() {
+        $(LOCATORS.DOWN_BUTTON).click();
+        checkCurrentCoordinates();
+    }
+
+    public int titleCoordinates() {
+        return $(LOCATORS.WE_ARE_REALLY_GOOD_AT_TITLE).getCoordinates().inViewPort().getY();
+    }
+
+    public boolean checkCurrentCoordinates()  {
+        for (int i = 0; i < 100; i++) {
+            if ($(LOCATORS.WE_ARE_REALLY_GOOD_AT_TITLE).getCoordinates().inViewPort().getY()==155) {
+                return true;
+            }
+        }
+       return false;
+    }
+
+
+
 }

@@ -33,7 +33,7 @@ import javax.mail.MessagingException;
 
 @DefaultUrl("https://www.aimprosoft.com/")
 
-public class NavigationMenu extends net.serenitybdd.core.pages.PageObject {
+public class NavigationMenuPage extends net.serenitybdd.core.pages.PageObject {
 
     public void clickOnTheTitle(String arg0) {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.CATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0))));
