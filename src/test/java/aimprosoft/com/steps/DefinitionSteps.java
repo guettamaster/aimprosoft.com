@@ -68,4 +68,9 @@ public class DefinitionSteps {
     public void weAreReallyGoodAtBlockIsHasCoordinates(int a) throws Throwable {
         endUserSteps.weAreReallyGoodAtBlockIsDisplayed(a);
     }
+
+    @When("^click on Request a free quote link$")
+    public void clickOnRequestAFreeQuoteLink() throws Throwable {
+        endUserSteps.clickOnRequestAFreeQuoteLink();
+    }
 }

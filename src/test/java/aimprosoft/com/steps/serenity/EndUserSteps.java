@@ -68,5 +68,8 @@ public class EndUserSteps extends ScenarioSteps {
         Assert.assertEquals(a, homePage.titleCoordinates());
     }
 
-
+    @Step
+    public void clickOnRequestAFreeQuoteLink() {
+        homePage.clickOnRequestAFreeQuoteLink();
+    }
 }

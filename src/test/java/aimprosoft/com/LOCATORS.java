@@ -14,6 +14,7 @@ String CATEGORY_BREADCRUMB = "//span[@property='name'][contains(text(),'$1')]";
 String TECHNOLOGIES_TAB = "//ul[@class='menu-portfolio-category-menu']//a[contains(@href,\"https://www.aimprosoft.com/\")][.='$1']";
 String DOWN_BUTTON = "//i[@class='ti-angle-down']";
 String WE_ARE_REALLY_GOOD_AT_TITLE = "//h1[@class='light-font section-title'][contains(text(),'We are really good at')]";
+String REQUEST_A_FREE_QUOTE_LINK = "//div[@class='pull-right top-contact-links hidden-xs hidden-sm hidden-md']/a[@class='request-button'][contains(text(),'REQUEST A FREE QUOTE')]";
 
 
 

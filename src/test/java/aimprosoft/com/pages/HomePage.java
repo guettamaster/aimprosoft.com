@@ -72,6 +72,7 @@ public class HomePage extends net.serenitybdd.core.pages.PageObject {
        return false;
     }
 
-
-
+    public void clickOnRequestAFreeQuoteLink() {
+        $(LOCATORS.REQUEST_A_FREE_QUOTE_LINK).click();
+    }
 }
