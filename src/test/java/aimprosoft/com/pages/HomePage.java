@@ -75,4 +75,8 @@ public class HomePage extends net.serenitybdd.core.pages.PageObject {
     public void clickOnRequestAFreeQuoteLink() {
         $(LOCATORS.REQUEST_A_FREE_QUOTE_LINK).click();
     }
+
+    public boolean currentURLEqualsToExpected() {
+        return getDriver().getCurrentUrl().equals("https://www.aimprosoft.com/contact-us/");
+    }
 }

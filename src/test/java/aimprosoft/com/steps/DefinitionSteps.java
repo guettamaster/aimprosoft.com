@@ -73,4 +73,9 @@ public class DefinitionSteps {
     public void clickOnRequestAFreeQuoteLink() throws Throwable {
         endUserSteps.clickOnRequestAFreeQuoteLink();
     }
+
+    @Then("^the url for Contacts page is present$")
+    public void theUrlForContactsPageIsPresent() throws Throwable {
+        endUserSteps.theUrlForContactsPageIsPresent();
+    }
 }
