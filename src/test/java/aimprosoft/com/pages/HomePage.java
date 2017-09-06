@@ -72,11 +72,11 @@ public class HomePage extends net.serenitybdd.core.pages.PageObject {
        return false;
     }
 
-    public void clickOnRequestAFreeQuoteLink() {
+    public void clickOnTheRequestAFreeQuoteLink() {
         $(LOCATORS.REQUEST_A_FREE_QUOTE_LINK).click();
     }
 
-    public boolean currentURLEqualsToExpected() {
-        return getDriver().getCurrentUrl().equals("https://www.aimprosoft.com/contact-us/");
+    public boolean currentUrlEqualsTo(String url) {
+        return getDriver().getCurrentUrl().equals(url);
     }
 }

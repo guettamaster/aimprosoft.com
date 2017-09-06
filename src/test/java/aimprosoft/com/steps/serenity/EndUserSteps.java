@@ -69,12 +69,12 @@ public class EndUserSteps extends ScenarioSteps {
     }
 
     @Step
-    public void clickOnRequestAFreeQuoteLink() {
-        homePage.clickOnRequestAFreeQuoteLink();
+    public void clickOnTheRequestAFreeQuoteLink() {
+        homePage.clickOnTheRequestAFreeQuoteLink();
     }
 
     @Step
-    public void theUrlForContactsPageIsPresent() {
-        Assert.assertTrue("False", homePage.currentURLEqualsToExpected());
+    public void currentUrlEqualsTo(String url) {
+        Assert.assertTrue("False", homePage.currentUrlEqualsTo(url));
     }
 }

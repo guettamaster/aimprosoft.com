@@ -109,5 +109,3 @@ Feature: testing navigation menu
     url
     Then "Contacts" title is displayed
     Then "Contacts" breadcrumb is displayed
-
-    gdfgdfg

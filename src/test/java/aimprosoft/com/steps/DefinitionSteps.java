@@ -69,13 +69,13 @@ public class DefinitionSteps {
         endUserSteps.weAreReallyGoodAtBlockIsDisplayed(a);
     }
 
-    @When("^click on Request a free quote link$")
-    public void clickOnRequestAFreeQuoteLink() throws Throwable {
-        endUserSteps.clickOnRequestAFreeQuoteLink();
+    @When("^click on the Request a free quote link$")
+    public void clickOnTheRequestAFreeQuoteLink() throws Throwable {
+        endUserSteps.clickOnTheRequestAFreeQuoteLink();
     }
 
-    @Then("^the url for Contacts page is present$")
-    public void theUrlForContactsPageIsPresent() throws Throwable {
-        endUserSteps.theUrlForContactsPageIsPresent();
+    @Then("^current url equals to \"([^\"]*)\"$")
+    public void currentUrlEqualsTo(String url) throws Throwable {
+        endUserSteps.currentUrlEqualsTo(url);
     }
 }
