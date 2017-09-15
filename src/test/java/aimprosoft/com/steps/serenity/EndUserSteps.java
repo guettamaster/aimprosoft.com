@@ -77,4 +77,9 @@ public class EndUserSteps extends ScenarioSteps {
     public void currentUrlEqualsTo(String url) {
         Assert.assertTrue("False", homePage.currentUrlEqualsTo(url));
     }
+
+    @Step
+    public void clickOnTheSubcategoryTitle(String arg0) {
+        navigationMenuPage.clickOnTheSubcategoryTitle(arg0);
+    }
 }

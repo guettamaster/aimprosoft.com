@@ -78,4 +78,9 @@ public class DefinitionSteps {
     public void currentUrlEqualsTo(String url) throws Throwable {
         endUserSteps.currentUrlEqualsTo(url);
     }
+
+    @When("^click on the \"([^\"]*)\" subcategory title$")
+    public void clickOnTheSubcategoryTitle(String arg0) throws Throwable {
+        endUserSteps.clickOnTheSubcategoryTitle(arg0);
+    }
 }

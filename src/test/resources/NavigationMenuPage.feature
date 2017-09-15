@@ -1,23 +1,25 @@
 Feature: testing navigation menu
 
-#  Scenario: 2.001 Check that subcategories is displayed after clicking on the "Key Technologies" title
-#    Given open home page
-#    Then home page is opened
-#    When click on the "Key Technologies" title
-#    Then "Liferay Development" subcategory is displayed
-#    When click on the "Liferay Development" subcategory title
-#    url
-#    Then "Liferay Development" title is displayed
-#    Then "Liferay Development" breadcrumb is displayed
-#    Then "Alfresco Development" subcategory is displayed
-#    url
-#    Then "" title is displayed
-#    Then "" breadcrumb is displayed
-#    Then "Hybris Development" subcategory is displayed
-#    url
-#    Then "" title is displayed
-#    Then "" breadcrumb is displayed
-#
+  Scenario: 2.001 Check that subcategories is displayed after clicking on the "Key Technologies" title
+    Given open home page
+    Then home page is opened
+    When click on the "Key Technologies" title
+    Then "Liferay Development" subcategory is displayed
+    Then "Alfresco Development" subcategory is displayed
+    Then "Hybris Development" subcategory is displayed
+    When click on the "Liferay Development" subcategory title
+    Then current url equals to "https://www.aimprosoft.com/liferay-development/"
+    Then "Liferay Development" title is displayed
+    Then "Liferay Development" breadcrumb is displayed
+    When click on the "Alfresco Development" subcategory title
+    Then current url equals to "https://www.aimprosoft.com/alfresco-development/"
+    Then "Alfresco Development" title is displayed
+    Then "Alfresco Development" breadcrumb is displayed
+    When click on the "Hybris Development" subcategory title
+    Then current url equals to "https://www.aimprosoft.com/hybris-development/"
+    Then "Hybris Development" title is displayed
+    Then "Hybris Development" breadcrumb is displayed
+
 #  Scenario: 2.002 Check that subcategories is displayed after clicking on the "Services" title
 #    Given open home page
 #    Then home page is opened
