@@ -20,39 +20,45 @@ Feature: testing navigation menu
     Then "Hybris Development" title is displayed
     Then "Hybris Development" breadcrumb is displayed
 
-#  Scenario: 2.002 Check that subcategories is displayed after clicking on the "Services" title
-#    Given open home page
-#    Then home page is opened
-#    When click on the "Services" title
-#    Then "Engineering" subcategory is displayed
-#    When click on the "Engineering" title subcat
-#    url
-#    Then "" title is displayed
-#    Then "" breadcrumb is displayed
-#    When click on the "Software Product Dev." title subcat
-#    url
-#    Then "" title is displayed
-#    Then "" breadcrumb is displayed
-#    When click on the "Dedicated Team" title subcat
-#    url
-#    Then "" title is displayed
-#    Then "" breadcrumb is displayed
-#    When click on the "Mobile" title subcat
-#    Then "Mobile" subcategory is displayed
-#    url
-#    Then "" title is displayed
-#    Then "" breadcrumb is displayed
-#    When click on the "Mobile" title subcat
-#    Then "Frontend" subcategory is displayed
-#    url
-#    Then "" title is displayed
-#    Then "" breadcrumb is displayed
-#    When click on the "Mobile" title subcat
-#    Then "Quality Assurance" subcategory is displayed
-#    url
-#    Then "" title is displayed
-#    Then "" breadcrumb is displayed
-#
+  Scenario: 2.002 Check that subcategories is displayed after clicking on the "Services" title
+    Given open home page
+    Then home page is opened
+    When click on the "Services" title
+    Then "Engineering" subcategory is displayed
+    Then "Mobile" subcategory is displayed
+    Then "Frontend" subcategory is displayed
+    Then "Quality Assurance" subcategory is displayed
+    When click on the "Engineering" subcategory title
+    Then current url equals to "https://www.aimprosoft.com/engineering-services/"
+    Then "Engineering" title is displayed
+    Then "Engineering" breadcrumb is displayed
+    Then "Software Product Dev." subcategory is displayed
+    Then "Dedicated Team" subcategory is displayed
+
+    When click on the "Software Product Dev." title subcat
+    url
+    Then "" title is displayed
+    Then "" breadcrumb is displayed
+    When click on the "Dedicated Team" title subcat
+    url
+    Then "" title is displayed
+    Then "" breadcrumb is displayed
+    When click on the "Mobile" title subcat
+    Then "Mobile" subcategory is displayed
+    url
+    Then "" title is displayed
+    Then "" breadcrumb is displayed
+    When click on the "Mobile" title subcat
+    Then "Frontend" subcategory is displayed
+    url
+    Then "" title is displayed
+    Then "" breadcrumb is displayed
+    When click on the "Mobile" title subcat
+    Then "Quality Assurance" subcategory is displayed
+    url
+    Then "" title is displayed
+    Then "" breadcrumb is displayed
+
 #  Scenario: 2.003 Check that "Portfolio" section title on the background image is displayed after clicking on the "Portfolio" title
 #    Given open home page
 #    Then home page is opened
