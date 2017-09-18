@@ -82,4 +82,9 @@ public class EndUserSteps extends ScenarioSteps {
     public void clickOnTheSubcategoryTitle(String arg0) {
         navigationMenuPage.clickOnTheSubcategoryTitle(arg0);
     }
+
+    @Step
+    public void titleIsDisplayedOnTheBackgroundImage(String arg0) {
+        Assert.assertTrue("False", navigationMenuPage.titleIsDisplayedOnTheBackgroundImage(arg0));
+    }
 }

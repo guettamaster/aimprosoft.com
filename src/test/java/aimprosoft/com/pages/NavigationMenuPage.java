@@ -46,8 +46,8 @@ public class NavigationMenuPage extends net.serenitybdd.core.pages.PageObject {
     }
 
     public boolean titleIsDisplayed(String arg0) {
-        withTimeoutOf(16, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SECTION_TILTE_ON_THE_BACKGROUND_IMAGE.replace("$1", arg0))));
-        return $(LOCATORS.SECTION_TILTE_ON_THE_BACKGROUND_IMAGE.replace("$1", arg0)).isPresent();
+        withTimeoutOf(16, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SECTION_TITLE_ON_THE_BACKGROUND_IMAGE.replace("$1", arg0))));
+        return $(LOCATORS.SECTION_TITLE_ON_THE_BACKGROUND_IMAGE.replace("$1", arg0)).isPresent();
     }
 
     public boolean breadcrumbIsDisplayed(String arg0) {
@@ -63,5 +63,10 @@ public class NavigationMenuPage extends net.serenitybdd.core.pages.PageObject {
     public void clickOnTheSubcategoryTitle(String arg0) {
         withTimeoutOf(15, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SUBCATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0))));
         $(LOCATORS.SUBCATEGORY_TITLE_NAME_ON_THE_NAVIGATION_MENU.replace("$1", arg0)).click();
+    }
+
+    public boolean titleIsDisplayedOnTheBackgroundImage(String arg0) {
+        withTimeoutOf(16, TimeUnit.SECONDS).waitFor(ExpectedConditions.visibilityOfElementLocated(By.xpath(LOCATORS.SECTION_TITLE_NAME_ON_THE_BACKGROUND_IMAGE.replace("$1", arg0))));
+        return $(LOCATORS.SECTION_TITLE_NAME_ON_THE_BACKGROUND_IMAGE.replace("$1", arg0)).isPresent();
     }
 }

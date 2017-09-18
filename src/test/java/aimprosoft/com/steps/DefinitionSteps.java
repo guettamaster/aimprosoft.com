@@ -83,4 +83,9 @@ public class DefinitionSteps {
     public void clickOnTheSubcategoryTitle(String arg0) throws Throwable {
         endUserSteps.clickOnTheSubcategoryTitle(arg0);
     }
+
+    @Then("^\"([^\"]*)\" title is displayed on the background image$")
+    public void titleIsDisplayedOnTheBackgroundImage(String arg0) throws Throwable {
+        endUserSteps.titleIsDisplayedOnTheBackgroundImage(arg0);
+    }
 }

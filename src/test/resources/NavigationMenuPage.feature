@@ -34,30 +34,29 @@ Feature: testing navigation menu
     Then "Engineering" breadcrumb is displayed
     Then "Software Product Dev." subcategory is displayed
     Then "Dedicated Team" subcategory is displayed
-
-    When click on the "Software Product Dev." title subcat
-    url
-    Then "" title is displayed
-    Then "" breadcrumb is displayed
-    When click on the "Dedicated Team" title subcat
-    url
-    Then "" title is displayed
-    Then "" breadcrumb is displayed
-    When click on the "Mobile" title subcat
+    When click on the "Software Product Dev." subcategory title
+    Then current url equals to "https://www.aimprosoft.com/software-development/"
+    Then "Software" title is displayed on the background image
+    Then "Software Product Dev." breadcrumb is displayed
+    When click on the "Dedicated Team" subcategory title
+    Then current url equals to "https://www.aimprosoft.com/dedicated-team/"
+    Then "Dedicated Team" title is displayed
+    Then "Dedicated Team" breadcrumb is displayed
+    When click on the "Mobile" subcategory title
     Then "Mobile" subcategory is displayed
-    url
-    Then "" title is displayed
-    Then "" breadcrumb is displayed
-    When click on the "Mobile" title subcat
+    Then current url equals to "https://www.aimprosoft.com/mobile-development/"
+    Then "Mobile Development" title is displayed
+    Then "Mobile Development" breadcrumb is displayed
+    When click on the "Frontend" subcategory title
     Then "Frontend" subcategory is displayed
-    url
-    Then "" title is displayed
-    Then "" breadcrumb is displayed
-    When click on the "Mobile" title subcat
+    Then current url equals to "https://www.aimprosoft.com/frontend-development/"
+    Then "Frontend Development" title is displayed
+    Then "Frontend Development" breadcrumb is displayed
+    When click on the "Quality Assurance" subcategory title
     Then "Quality Assurance" subcategory is displayed
-    url
-    Then "" title is displayed
-    Then "" breadcrumb is displayed
+    Then current url equals to "https://www.aimprosoft.com/quality-assurance/"
+    Then "Quality Assurance" title is displayed
+    Then "Quality Assurance" breadcrumb is displayed
 
 #  Scenario: 2.003 Check that "Portfolio" section title on the background image is displayed after clicking on the "Portfolio" title
 #    Given open home page
