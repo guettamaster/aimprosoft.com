@@ -17,7 +17,7 @@ String WE_ARE_REALLY_GOOD_AT_TITLE = "//h1[@class='light-font section-title'][co
 String REQUEST_A_FREE_QUOTE_LINK = "//div[@class='pull-right top-contact-links hidden-xs hidden-sm hidden-md']/a[@class='request-button'][contains(text(),'REQUEST A FREE QUOTE')]";
 String SECTION_TITLE_NAME_ON_THE_BACKGROUND_IMAGE = "//h1[@class='light-font section-title'][contains(text(),'$1')]";
 
-
+String CATEGORY_SUBCATEGORY_BREADCUMB = //div[@class='breadcrumbs']//span[contains(text(),'Aimprosoft')]//ancestor::div[@class='breadcrumbs']//span[contains(text(),'Portfolio')]//ancestor::div[@class='breadcrumbs']//span[contains(text(),'Liferay')]
 
 
 

@@ -58,21 +58,41 @@ Feature: testing navigation menu
     Then "Quality Assurance" title is displayed
     Then "Quality Assurance" breadcrumb is displayed
 
-#  Scenario: 2.003 Check that "Portfolio" section title on the background image is displayed after clicking on the "Portfolio" title
-#    Given open home page
-#    Then home page is opened
-#    When click on the "Portfolio" title
-#    url
-#    Then "Portfolio" title is displayed
-#    Then "Portfolio" breadcrumb is displayed
-#    Then "All projects" tab is displayed
-#    Then "Liferay" tab is displayed
-#    Then "Alfresco" tab is displayed
-#    Then "Hybris" tab is displayed
-#    Then "Web Apps" tab is displayed
-#    Then "Mobile Apps" tab is displayed
-#    Then "Engineering" tab is displayed
-#
+  Scenario: 2.003 Check that "Portfolio" section title on the background image is displayed after clicking on the "Portfolio" title
+    Given open home page
+    Then home page is opened
+    When click on the "Portfolio" title
+    Then current url equals to "https://www.aimprosoft.com/portfolio/"
+    Then "Portfolio" title is displayed
+    Then "Portfolio" breadcrumb is displayed
+    Then "All projects" tab is displayed
+
+    When click on the "Liferay" tab
+    Then breadcrumb "1" breadcrumb "2" displayed
+    Then "Liferay" breadcrumb is displayed
+    Then current url equals to "https://www.aimprosoft.com/liferay-development-portfolio/"
+    Then "Liferay" tab is displayed
+
+    When click on the "Alfresco" tab
+    Then current url equals to "https://www.aimprosoft.com/alfresco-development-portfolio/"
+    Then "Alfresco" tab is displayed
+
+    When click on the "Hybris" tab
+    Then current url equals to "https://www.aimprosoft.com/hybris-development-portfolio/"
+    Then "Hybris" tab is displayed
+
+    When click on the "Web Apps" tab
+    Then current url equals to "https://www.aimprosoft.com/web-apps-development-portfolio/"
+    Then "Web Apps" tab is displayed
+
+    When click on the "Mobile Apps" tab
+    Then current url equals to "https://www.aimprosoft.com/mobile-apps-development-portfolio/"
+    Then "Mobile Apps" tab is displayed
+
+    When click on the "Engineering" tab
+    Then current url equals to "https://www.aimprosoft.com/engineering-development-portfolio/"
+    Then "Engineering" tab is displayed
+
 #  Scenario: 2.004 Check that "Blog" section title on the background image is displayed after clicking on the "Blog" title
 #    Given open home page
 #    Then home page is opened
